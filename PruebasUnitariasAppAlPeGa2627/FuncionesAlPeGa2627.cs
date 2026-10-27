@@ -4,7 +4,8 @@ using System.Text;
 
 namespace ActividadTDDAppAlPeGa2627
 {
-    internal class ActividadTDDAppAlPeGa
+    public class FuncionesAlPeGa2627
     {
+
     }
 }
