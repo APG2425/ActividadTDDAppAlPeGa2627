@@ -21,17 +21,8 @@ namespace ActividadTDDAppAlPeGa2627
         }
 
         public bool EsContrasenyaValida(string contrasenya)
-        { 
-            if (contrasenya == "")
-                return false;
-
-            if (contrasenya == null)
-                return false;
-
-            if (contrasenya.Length < 8)
-                return false;
-
-            if(!contrasenya.Contains("#"))
+        {
+            if (string.IsNullOrWhiteSpace(contrasenya) ||contrasenya.Length < 8 || !contrasenya.Contains("#"))
                 return false;
 
             return true;
